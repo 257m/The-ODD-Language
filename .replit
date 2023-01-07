@@ -1,0 +1,2 @@
+OnBoot = "source .bashrc" 
+run = "make compile_c && make calr"

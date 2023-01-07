@@ -1,0 +1,16 @@
+# manual header for oddio.hodd
+# Will have proper one that you use by
+# doing #include <oddio.hodd>
+extern printd(x);
+extern getd();
+extern sin(x);
+
+def degtorad(x)
+	return x*0.01745329251;
+
+def main()
+{
+	@start: # make the start of the function a label so you can reference it in goto
+	printd(sin(degtorad(getd()))); # get a double from user convert to rad put in sin function and then print that out
+	goto start; # go back to start after printing the user input to ask again
+}

@@ -1,0 +1,17 @@
+---
+BasedOnStyle: LLVM
+UseTab: Always
+IndentWidth: 4
+TabWidth: 4
+PointerAlignment: Left
+IndentCaseLabels: true
+AlignAfterOpenBracket: false
+AlignTrailingComments: true
+AlignOperands: false
+AllowShortIfStatementsOnASingleLine: Never
+BreakBeforeBraces: Custom
+BreakBeforeBinaryOperators: false
+BreakBeforeTernaryOperators: false
+BraceWrapping:
+  AfterFunction: true
+  BeforeElse: true
