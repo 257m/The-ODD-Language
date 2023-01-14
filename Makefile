@@ -7,8 +7,8 @@ C_FILE = libodd/object_files/oddio
 OUTPUT_FILE = single
 
 compile_c:
-	clang -I/nix/store/ny8vpd071f90p066bbd68skbnjwd297h-llvm-13.0.0-rc1-dev/include -std=c99 -fno-exceptions -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -g -o $(OC).o -c $(OC).c
-	clang -L/nix/store/lai4qa79hcqb7ag18aiw4raybqp0hj6v-llvm-13.0.0-rc1-lib/lib wrapper.o $(OC).o -o $(OC) -lLLVM-13git -lm
+	clang -o $(OC).o -c $(OC).c `llvm-config --cflags` -g 
+	clang wrapper.o $(OC).o -o $(OC) `llvm-config --libs` -lm
 	mv ./codd ./bin
 
 calr:

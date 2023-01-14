@@ -1362,7 +1362,7 @@ LLVMOpcode get_cast_opcode(LLVMTypeRef source, LLVMTypeRef dest)
 				value = LLVMBuildLoad(builder, value, "depoint");              \
 	}
 
-inline bool IsFloatVariant(LLVMTypeKind typekind)
+bool IsFloatVariant(LLVMTypeKind typekind)
 {
 	switch(typekind) {
 		case LLVMHalfTypeKind:
