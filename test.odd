@@ -17,6 +17,7 @@ double degtorad(double x)
 
 void main()
 {
-	printi(factorial(5));
-	return;
+	int32 x = 3;
+	int32* p = &x;
+	printi(factorial(*p));
 }

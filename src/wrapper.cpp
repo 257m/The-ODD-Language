@@ -8,7 +8,7 @@
 #include "llvm/Transforms/Scalar.h"
 #include "llvm/Support/ErrorHandling.h"
 using namespace llvm;
-#include "wrapper.h"
+#include "../include/wrapper.h"
 
 bool BlockhasNPredecessors(LLVMBasicBlockRef block,unsigned int N)
 {
